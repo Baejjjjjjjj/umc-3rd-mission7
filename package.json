@@ -1,0 +1,39 @@
+{
+  "name": "es6-server-node-template",
+  "version": "1.0.0",
+  "description": "Node.js API Server by UMC 3rd ddol",
+  "main": "index.js",
+  "scripts": {
+    "type": "module",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYY1007/es6-node.js-template.git"
+  },
+  "author": "CHOI YONG WOOK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CYY1007/es6-node.js-template/issues"
+  },
+  "homepage": "https://github.com/CYY1007/es6-node.js-template#readme",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "method": "^2.0.0",
+    "method-override": "^3.0.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "regex-email": "^1.0.2"
+  },
+  "devDependencies": {}
+}
