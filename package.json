@@ -4,7 +4,7 @@
   "description": "Node.js API Server by UMC 3rd ddol",
   "main": "index.js",
   "scripts": {
-    "type": "module",
+    
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon"
   },

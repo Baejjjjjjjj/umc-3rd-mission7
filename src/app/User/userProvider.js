@@ -1,5 +1,5 @@
 import pool from "../../../config/database"
-import { selectUser, selectUserAccount, selectUserEmail, selectUserId, selectUserPassword } from "./userDao";
+import { selectUser, selectUserAccount, selectUserEmail, selectUserId, selectUserNickname, selectUserPassword } from "./userDao";
 
 
 export const retrieveUserList = async(email) =>{
@@ -25,7 +25,7 @@ export const retrieveUser = async(userId) =>{
 
     connection.release();
 
-    return userResult[0];
+    return userResult[0]; //id를  return한다. 
 }
 
 export const emailCheck = async (email) =>{
@@ -54,3 +54,11 @@ export const accountCheck = async (email) =>{
 
     return userAccountResult;
 }
+
+/*export const nicknameCheck = async(nickname)=>{
+    const connection = await pool.getConnection(async conn => conn);
+    const nicknameCheckResult = await selectUserNickname(connection, nickname);
+    connection.release();
+
+    return nicknameCheckResult;
+}*/

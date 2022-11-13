@@ -25,12 +25,14 @@ export const createUser = async (email, password, nickname) =>{
         console.log(`추가된 회원 : ${userIdResult[0].insertId}`);
         connection.release();
         return response(baseResponse.SUCCESS);
+
     }catch (err){
+    
         return errResponse(baseResponse.DB_ERROR);
     }
 }
 
-export const postSignIn = async (email, password) =>{
+export const postSignIn = async (email, password) =>{ // 로그인이니까 아직 안봐도 됨
     try{
         //이메일여부 확인
         const emailRows = await emailCheck(email);

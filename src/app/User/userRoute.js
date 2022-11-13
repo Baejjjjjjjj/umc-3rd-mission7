@@ -9,7 +9,7 @@ userRouter.get('/test', getTest);
 
 userRouter.route('/').get(getUsers).post(postUsers);
 
-userRouter.post('/login', login);
+// userRouter.post('/login', login); 8주차에서 사용
 
 userRouter.route('/:userId').get(getUserById).patch(jwtMiddleware, patchUsers);
 
